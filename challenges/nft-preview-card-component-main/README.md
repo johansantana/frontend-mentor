@@ -1,1 +1,1 @@
-# Nft preview card
+# NFT preview card
