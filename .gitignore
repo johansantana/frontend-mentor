@@ -12,4 +12,4 @@ package-lock.json
 # Project directories ignores 📁
 # This because in this repository will only reside the most simple vanilla projects I complete (HTML, CSS and JS).
 # But those projects made with a framework or more complex project, will probably live in their own repository. (But it will be linked here)
-advice-generator/
+challenges/_*/
