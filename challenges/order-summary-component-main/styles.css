@@ -1,0 +1,147 @@
+:root {
+  --ff: 'Red Hat Display', sans-serif;
+  --white: white;
+  --blue-100: hsl(225, 100%, 98%);
+  --blue-200: hsl(225, 100%, 94%);
+  --blue-300: hsl(224, 23%, 55%);
+  --blue-400: hsl(245, 75%, 52%);
+  --blue-400h: hsl(245, 100%, 70%);
+  --blue-500: hsl(223, 47%, 23%);
+}
+
+* {
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: var(--ff);
+  font-size: 16px;
+  background-color: var(--blue-200);
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0 1.5rem;
+}
+
+h2,
+h4 {
+  font-weight: 900;
+  color: var(--blue-500);
+}
+
+p {
+  line-height: 1.6;
+  max-width: 18rem;
+}
+
+@media screen and (max-width: 350px) {
+  body {
+    font-size: 14px;
+  }
+}
+
+p,
+span {
+  font-weight: 500;
+  color: var(--blue-300);
+}
+
+a {
+  color: var(--blue-400);
+  transition: color 0.5s ease;
+  font-weight: 700;
+}
+
+a:hover {
+  color: var(--blue-400h);
+}
+
+.btn {
+  padding: 1em;
+  font-family: var(--ff);
+  font-weight: 900;
+  border: none;
+  border-radius: 1em;
+  cursor: pointer;
+  transition: background-color 0.5s ease, color 0.5s ease;
+}
+
+.flex {
+  display: flex;
+}
+
+.center {
+  text-align: center;
+}
+
+.card {
+  max-width: 400px;
+  background-color: var(--white);
+  border-radius: 1.5em;
+  overflow: hidden;
+}
+
+.card,
+.card__content {
+  flex-direction: column;
+}
+
+.card__img {
+  width: 100%;
+}
+
+.card__content {
+  align-items: center;
+  flex-grow: 1;
+  justify-content: space-evenly;
+  padding: 2rem;
+  gap: 1.5em;
+}
+
+@media screen and (min-width: 376px) {
+  .card__content {
+    padding: 2rem 3rem;
+  }
+}
+
+.card__plan {
+  font-size: 0.9em;
+  padding: 1em;
+  background-color: var(--blue-100);
+  gap: 1em;
+  align-items: center;
+  border-radius: 1em;
+  width: 100%;
+}
+
+.card__plan > *:last-child {
+  flex-grow: 1;
+  text-align: right;
+}
+
+.btn-container {
+  flex-direction: column;
+  gap: 0.5em;
+  width: 100%;
+}
+
+.btn--primary {
+  background-color: var(--blue-400);
+  color: var(--white);
+}
+
+.btn--secondary {
+  background-color: transparent;
+  color: var(--blue-300);
+  align-self: center;
+}
+
+.btn--primary:hover {
+  background-color: var(--blue-400h);
+}
+
+.btn--secondary:hover {
+  color: var(--blue-500);
+}
