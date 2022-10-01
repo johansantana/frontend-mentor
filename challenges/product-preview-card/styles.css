@@ -1,0 +1,147 @@
+:root {
+  /* Primary */
+  --cream: hsl(30, 38%, 92%);
+  --dark-cyan: hsl(158, 36%, 37%);
+  /* Neutral */
+  --very-dark-blue: hsl(212, 21%, 14%);
+  --dark-grayish-blue: hsl(228, 12%, 48%);
+  /* Font-family */
+  --montserrat: 'Montserrat', sans-serif;
+  --fraunces: 'Fraunces', serif;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 16px;
+}
+
+body {
+  padding: 1em;
+  min-height: 100vh;
+  background-color: var(--cream);
+  display: grid;
+  place-items: center;
+  font-family: var(--montserrat);
+  color: var(--dark-grayish-blue);
+  font-weight: 500;
+}
+
+img {
+  width: 100%;
+}
+
+h4 {
+  font-family: var(--fraunces);
+  color: var(--very-dark-blue);
+  font-size: 1.9em;
+  line-height: 1em;
+  margin-bottom: 0.8em;
+}
+
+.product__card {
+  max-width: 90%;
+  background-color: white;
+  border-radius: 15px;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+}
+
+.product__img {
+  display: flex;
+  align-items: center;
+  height: 250px;
+  overflow: hidden;
+}
+
+.product__info {
+  padding: 1.6em;
+}
+
+.product__tag {
+  letter-spacing: 5px;
+  margin-bottom: 0.8em;
+  font-variant: small-caps;
+}
+
+.product__description {
+  margin-bottom: 1em;
+}
+
+.product__description > span {
+  text-transform: uppercase;
+}
+
+.product__price {
+  display: flex;
+  gap: 10px;
+  font-size: 1.7em;
+  font-family: var(--fraunces);
+  color: var(--dark-cyan);
+  margin-bottom: 1rem;
+}
+
+.product__price > sup {
+  text-decoration: line-through;
+  font-family: var(--montserrat);
+  font-size: 0.4em;
+  color: var(--dark-grayish-blue);
+  align-self: center;
+}
+
+.product__cta {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  border: none;
+  background-color: var(--dark-cyan);
+  color: white;
+  font-family: inherit;
+  width: 100%;
+  padding: 15px;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.product__cta:hover {
+  filter: brightness(80%);
+}
+
+@media screen and (min-width: 600px) {
+  h4 {
+    margin: 0.7em 0;
+  }
+
+  .product__card {
+    font-size: 24px;
+    min-width: min-content;
+    max-width: 800px;
+    flex-direction: row;
+  }
+
+  .product__card > div {
+    flex-basis: 400px;
+  }
+
+  .product__img {
+    height: 100%;
+  }
+
+  .product__description {
+    font-size: 0.8em;
+    line-height: 1.6em;
+  }
+
+  .product__price {
+    margin: 0.8em 0;
+  }
+
+  .product__cta {
+    font-size: 1rem;
+  }
+}
