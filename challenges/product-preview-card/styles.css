@@ -8,6 +8,9 @@
   /* Font-family */
   --montserrat: 'Montserrat', sans-serif;
   --fraunces: 'Fraunces', serif;
+
+  /* Active States */
+  --primary-hover: hsl(158, 42%, 25%);
 }
 
 * {
@@ -35,7 +38,7 @@ img {
   width: 100%;
 }
 
-h4 {
+h1 {
   font-family: var(--fraunces);
   color: var(--very-dark-blue);
   font-size: 1.9em;
@@ -43,20 +46,22 @@ h4 {
   margin-bottom: 0.8em;
 }
 
-.product__card {
-  max-width: 90%;
-  background-color: white;
-  border-radius: 15px;
-  overflow: hidden;
-  display: flex;
-  flex-direction: column;
+del {
+  font-family: var(--montserrat);
+  font-size: 0.4em;
+  color: var(--dark-grayish-blue);
+  align-self: center;
 }
 
-.product__img {
+.product__card {
+  max-width: 600px;
   display: flex;
-  align-items: center;
-  height: 250px;
+  flex-direction: column;
+  border-radius: 10px;
   overflow: hidden;
+  background-color: white;
+  font-family: var(--montserrat);
+  margin: 20px;
 }
 
 .product__info {
@@ -86,19 +91,12 @@ h4 {
   margin-bottom: 1rem;
 }
 
-.product__price > sup {
-  text-decoration: line-through;
-  font-family: var(--montserrat);
-  font-size: 0.4em;
-  color: var(--dark-grayish-blue);
-  align-self: center;
-}
-
 .product__cta {
   display: flex;
   justify-content: center;
   gap: 10px;
   border: none;
+  font-size: 1rem;
   background-color: var(--dark-cyan);
   color: white;
   font-family: inherit;
@@ -106,30 +104,29 @@ h4 {
   padding: 15px;
   border-radius: 8px;
   cursor: pointer;
+  transition: background-color 0.3s ease;
 }
 
 .product__cta:hover {
-  filter: brightness(80%);
+  background-color: var(--primary-hover);
 }
 
 @media screen and (min-width: 600px) {
-  h4 {
+  h1 {
     margin: 0.7em 0;
   }
 
   .product__card {
-    font-size: 24px;
+    font-size: 20px;
     min-width: min-content;
-    max-width: 800px;
+    max-width: 34em;
     flex-direction: row;
   }
 
-  .product__card > div {
-    flex-basis: 400px;
-  }
-
   .product__img {
-    height: 100%;
+    display: flex;
+    width: 50%;
+    flex-shrink: 0;
   }
 
   .product__description {
@@ -138,10 +135,6 @@ h4 {
   }
 
   .product__price {
-    margin: 0.8em 0;
-  }
-
-  .product__cta {
-    font-size: 1rem;
+    margin: 0.9em 0;
   }
 }
