@@ -117,7 +117,7 @@ del {
   }
 
   .product__card {
-    font-size: 20px;
+    font-size: 18px;
     min-width: min-content;
     max-width: 34em;
     flex-direction: row;
