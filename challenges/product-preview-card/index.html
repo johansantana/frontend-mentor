@@ -14,18 +14,20 @@
     <title>Frontend Mentor | Product preview card component</title>
   </head>
   <body>
-    <article class="product__card">
-      <div class="product__img">
-        <img src="images/image-product.jpg" alt="Product Image" />
-      </div>
+    <article class="product__card" role="main">
+      <picture class="product__img">
+        <source media="(min-width: 600px)" srcset="images/image-product-desktop.jpg" />
+        <img src="images/image-product-mobile.jpg" alt="Gabrielle Essence Eau De parfum Image" />
+      </picture>
+
       <div class="product__info">
         <p class="product__tag">perfume</p>
-        <h4 class="product__name">Gabrielle Essence Eau De parfum</h4>
+        <h1 class="product__name">Gabrielle Essence Eau De parfum</h1>
         <p class="product__description">
           A floral, solar and voluptuos interpretation composed by Oliver Polge, Perfumer-Creator for the
           House of <span>Chanel</span>.
         </p>
-        <p class="product__price">$149.99 <sup>169.99</sup></p>
+        <p class="product__price">$149.99 <del>169.99</del></p>
         <button class="product__cta">
           <svg width="15" height="16">
             <path
