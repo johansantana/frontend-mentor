@@ -1,6 +1,6 @@
 # Frontend Mentor Challenges
 
-In this Repository i will upload all challenges I complete from [Frontend](https://www.frontendmentor.io). I am not planning to do every single challenge in the page, but I will upload the challenge here as I complete it.
+In this Repository i will upload all challenges I complete from [Frontend Mentor](https://www.frontendmentor.io). I am not planning to do every single challenge in the page, but I will upload the challenge here as I complete it.
 
 <hr />
 
