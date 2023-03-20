@@ -6,7 +6,7 @@ This is my solution to the [Product review card challenge on Frontend Mentor](ht
 
 ### Screenshot
 
-![](./images/screenshot.jpg)
+![](./images/screenshot.png)
 
 ### Live Demo
 

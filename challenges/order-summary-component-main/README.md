@@ -6,7 +6,7 @@ This is my solution to the [Order summary component challenge on Frontend Mentor
 
 ### Screenshot
 
-![](./images/screenshot.jpg)
+![](./images/screenshot.png)
 
 ### Live Demo
 

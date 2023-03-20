@@ -6,7 +6,7 @@ This is my solution to the [Stats preview card component challenge on Frontend M
 
 ### Screenshot
 
-![](./images/screenshot.jpg)
+![](./images/screenshot.png)
 
 ### Live Demo
 
